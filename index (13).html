@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Skills Survey</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .question {
+            background-color: #e0f7fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+        button {
+            display: block;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #d1f7d6;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Job Skills Survey</h1>
+    <form id="surveyForm">
+        <div class="question">
+            <label>1. Do you enjoy problem-solving?</label>
+            <input type="radio" name="q1" value="yes"> Yes
+            <input type="radio" name="q1" value="no"> No
+        </div>
+        <div class="question">
+            <label>2. Are you good at working with numbers?</label>
+            <input type="radio" name="q2" value="yes"> Yes
+            <input type="radio" name="q2" value="no"> No
+        </div>
+        <div class="question">
+            <label>3. Do you like working with people?</label>
+            <input type="radio" name="q3" value="yes"> Yes
+            <input type="radio" name="q3" value="no"> No
+        </div>
+        <div class="question">
+            <label>4. Do you have strong written communication skills?</label>
+            <input type="radio" name="q4" value="yes"> Yes
+            <input type="radio" name="q4" value="no"> No
+        </div>
+        <div class="question">
+            <label>5. Are you detail-oriented?</label>
+            <input type="radio" name="q5" value="yes"> Yes
+            <input type="radio" name="q5" value="no"> No
+        </div>
+        <div class="question">
+            <label>6. Do you enjoy creative work?</label>
+            <input type="radio" name="q6" value="yes"> Yes
+            <input type="radio" name="q6" value="no"> No
+        </div>
+        <div class="question">
+            <label>7. Can you work independently?</label>
+            <input type="radio" name="q7" value="yes"> Yes
+            <input type="radio" name="q7" value="no"> No
+        </div>
+        <div class="question">
+            <label>8. Do you have experience with programming or coding?</label>
+            <input type="radio" name="q8" value="yes"> Yes
+            <input type="radio" name="q8" value="no"> No
+        </div>
+        <div class="question">
+            <label>9. Are you comfortable speaking in front of an audience?</label>
+            <input type="radio" name="q9" value="yes"> Yes
+            <input type="radio" name="q9" value="no"> No
+        </div>
+        <div class="question">
+            <label>10. Do you have leadership experience?</label>
+            <input type="radio" name="q10" value="yes"> Yes
+            <input type="radio" name="q10" value="no"> No
+        </div>
+        <div class="question">
+            <label>11. Are you skilled at multitasking?</label>
+            <input type="radio" name="q11" value="yes"> Yes
+            <input type="radio" name="q11" value="no"> No
+        </div>
+        <div class="question">
+            <label>12. Do you enjoy researching and analyzing information?</label>
+            <input type="radio" name="q12" value="yes"> Yes
+            <input type="radio" name="q12" value="no"> No
+        </div>
+        <div class="question">
+            <label>13. Can you handle high-pressure situations?</label>
+            <input type="radio" name="q13" value="yes"> Yes
+            <input type="radio" name="q13" value="no"> No
+        </div>
+        <div class="question">
+            <label>14. Are you tech-savvy?</label>
+            <input type="radio" name="q14" value="yes"> Yes
+            <input type="radio" name="q14" value="no"> No
+        </div>
+        <div class="question">
+            <label>15. Do you have artistic or design skills?</label>
+            <input type="radio" name="q15" value="yes"> Yes
+            <input type="radio" name="q15" value="no"> No
+        </div>
+        <div class="question">
+            <label>16. Do you enjoy teaching or mentoring others?</label>
+            <input type="radio" name="q16" value="yes"> Yes
+            <input type="radio" name="q16" value="no"> No
+        </div>
+        <div class="question">
+            <label>17. Are you good at managing time effectively?</label>
+            <input type="radio" name="q17" value="yes"> Yes
+            <input type="radio" name="q17" value="no"> No
+        </div>
+        <div class="question">
+            <label>18. Do you enjoy collaborating on projects?</label>
+            <input type="radio" name="q18" value="yes"> Yes
+            <input type="radio" name="q18" value="no"> No
+        </div>
+        <div class="question">
+            <label>19. Do you have customer service experience?</label>
+            <input type="radio" name="q19" value="yes"> Yes
+            <input type="radio" name="q19" value="no"> No
+        </div>
+        <div class="question">
+            <label>20. Are you proficient with data analysis tools (e.g., Excel, SQL)?</label>
+            <input type="radio" name="q20" value="yes"> Yes
+            <input type="radio" name="q20" value="no"> No
+        </div>
+        <button type="button" onclick="generateJobSkills()">Submit</button>
+    </form>
+    <div id="result" class="result"></div>
+</div>
+
+<script>
+    function generateJobSkills() {
+        var form = document.getElementById('surveyForm');
+        var resultDiv = document.getElementById('result');
+        var jobSkills = [];
+
+        for (var i = 1; i <= 20; i++) {
+            var question = form.elements['q' + i];
+            if (question.value === "yes") {
+                switch (i) {
+                    case 1: jobSkills.push("Problem Solving"); break;
+                    case 2: jobSkills.push("Numerical Analysis"); break;
+                    case 3: jobSkills.push("People Skills"); break;
+                    case 4: jobSkills.push("Written Communication"); break;
+                    case 5: jobSkills.push("Attention to Detail"); break;
+                    case 6: jobSkills.push("Creative Thinking"); break;
+                    case 7: jobSkills.push("Independent Work"); break;
+                    case 8: jobSkills.push("Programming / Coding"); break;
+                    case 9: jobSkills.push("Public Speaking"); break;
+                    case 10: jobSkills.push("Leadership"); break;
+                    case 11: jobSkills.push("Multitasking"); break;
+                    case 12: jobSkills.push("Research & Analysis"); break;
+                    case 13: jobSkills.push("Stress Management"); break;
+                    case 14: jobSkills.push("Tech Savviness"); break;
+                    case 15: jobSkills.push("Design Skills"); break;
+                    case 16: jobSkills.push("Teaching & Mentoring"); break;
+                    case 17: jobSkills.push("Time Management"); break;
+                    case 18: jobSkills.push("Collaboration"); break;
+                    case 19: jobSkills.push("Customer Service"); break;
+                    case 20: jobSkills.push("Data Analysis"); break;
+                }
+            }
+        }
+
+        if (jobSkills.length > 0) {
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = "Based on your answers, your key skills are: <br><strong>" + jobSkills.join(", ") + "</strong>";
+        } else {
+            resultDiv.style.display = 'block';
+            resultDiv.innerHTML = "You did not select any skills.";
+        }
+    }
+</script>
+
+</body>
+</html>
